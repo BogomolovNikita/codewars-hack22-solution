@@ -23,6 +23,7 @@ public class YossarianModifier {
         dis.readFully(targetClassFile);
         dis.close();
 
+        //Let's find the bytes responsible for the result of the isCrazy method and replaced false with true.
         int positionToChange = -1;
         for (int i = 0; i < targetClassFile.length - 4; i++) {
             byte b1 = targetClassFile[i];
@@ -34,7 +35,6 @@ public class YossarianModifier {
             }
         }
         if (positionToChange != -1) {
-            System.out.println(positionToChange);
             targetClassFile[positionToChange] = 0x04;
         }
         return targetClassFile;
