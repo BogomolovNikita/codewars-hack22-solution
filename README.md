@@ -1,5 +1,7 @@
 ### Solving the hack-22 task from CodeWars.
 
+To run, use *jdk 1.8*. Otherwise, you will need to put *tools.jar* to your classpath. You also need to add the following expression to the jvm startup parameters. `-Djdk.attach.allowAttachSelf=true`
+
 The task is solved using the [java-agent](https://docs.oracle.com/javase/7/docs/api/java/lang/instrument/package-summary.html) mechanism.
 
 The solution cannot be simply pasted into [CodeWars](https://www.codewars.com/). For convenience, I broke everything into classes. This will help you find inspiration.
