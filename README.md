@@ -31,7 +31,7 @@ public abstract class Yossarian {
 
 ```java
 Yossarian yossarian = Catch22.loophole();
-if (! yossarian.isCrazy()) fail("Keep fighting!");
+if (!yossarian.isCrazy()) fail("Keep fighting!");
 ```
 
 > "Catch-22 says they have a right to do anything we can't stop them from doing."
